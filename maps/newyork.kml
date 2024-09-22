@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Custom Pins</name>
+
+    <!-- Define a style for your custom icon -->
+    <Style id="customIconStyle">
+      <IconStyle>
+        <Icon>
+          <href>https://example.com/your-icon.png</href> <!-- Link to your custom icon -->
+        </Icon>
+        <scale>1.5</scale> <!-- Adjust size -->
+      </IconStyle>
+    </Style>
+
+    <!-- Central Park -->
+    <Placemark>
+      <name>Central Park</name>
+      <styleUrl>#customIconStyle</styleUrl> <!-- Apply the style to this placemark -->
+      <Point>
+        <coordinates>-73.968285,40.785091,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <!-- Franklin D. Roosevelt Four Freedoms Park -->
+    <Placemark>
+      <name>Franklin D. Roosevelt Four Freedoms Park</name>
+      <styleUrl>#customIconStyle</styleUrl> <!-- Apply the style to this placemark -->
+      <Point>
+        <coordinates>-73.9535,40.7587,0</coordinates>
+      </Point>
+    </Placemark>
+    
+  </Document>
+</kml>
