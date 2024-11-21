@@ -3,33 +3,195 @@
   <Document>
     <name>Custom Pins</name>
 
-    <!-- Define a style for your custom icon -->
+    <!-- Define a style for your custom Central ParQk icon -->
     <Style id="customIconStyle">
       <IconStyle>
         <Icon>
-          <href>https://example.com/your-icon.png</href> <!-- Link to your custom icon -->
+          <href>https://raw.githubusercontent.com/ShikhaMehta/travel-guide/main/assets/CentralPark.png</href>
         </Icon>
         <scale>1.5</scale> <!-- Adjust size -->
       </IconStyle>
     </Style>
 
-    <!-- Central Park -->
+    <!-- Define a red pin style -->
+    <Style id="redPinStyle">
+      <IconStyle>
+        <color>ff0000ff</color> <!-- Red color -->
+        <scale>4</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+        <!-- Define a attractionPinStyle -->
+    <Style id="attractionPinStyle">
+      <IconStyle>
+        <color>FFFF00</color> <!-- Yellow color -->
+        <scale>4</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    <!-- Central Park with Custom Icon -->
     <Placemark>
       <name>Central Park</name>
-      <styleUrl>#customIconStyle</styleUrl> <!-- Apply the style to this placemark -->
+      <styleUrl>#redPinStyle</styleUrl> <!-- Apply the custom icon style -->
       <Point>
         <coordinates>-73.968285,40.785091,0</coordinates>
       </Point>
     </Placemark>
 
-    <!-- Franklin D. Roosevelt Four Freedoms Park -->
+    <!-- Franklin D. Roosevelt Four Freedoms Park with Red Pin -->
     <Placemark>
       <name>Franklin D. Roosevelt Four Freedoms Park</name>
-      <styleUrl>#customIconStyle</styleUrl> <!-- Apply the style to this placemark -->
+      <styleUrl>#redPinStyle</styleUrl> <!-- Apply the red pin style -->
       <Point>
         <coordinates>-73.9535,40.7587,0</coordinates>
       </Point>
     </Placemark>
-    
+        <!-- Placemark for each attraction -->
+    <Placemark>
+      <name>Statue of Liberty</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.044502,40.689247,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Central Park</name>
+      <styleUrl>#attractionPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.968285,40.785091,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Times Square</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.985130,40.758896,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Empire State Building</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.985428,40.748817,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Brooklyn Bridge</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.996864,40.706086,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fifth Avenue</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.965759,40.775036,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Broadway Theater District</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.984472,40.759011,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Rockefeller Center</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.978674,40.758740,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Metropolitan Museum of Art</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.963244,40.779437,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Museum of Modern Art (MoMA)</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.977621,40.761436,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>One World Observatory</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.013379,40.712743,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9/11 Memorial And Museum</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.012318,40.711484,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>High Line</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.004765,40.747993,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wall Street</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.011276,40.707491,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chinatown</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.997031,40.715751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Little Italy</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.997327,40.719141,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>SoHo</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.002988,40.723301,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Greenwich Village</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-74.002742,40.733572,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bryant Park</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.983232,40.753596,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>St. Patrick's Cathedral</name>
+      <styleUrl>#redPinStyle</styleUrl>
+      <Point>
+        <coordinates>-73.975993,40.758465,0</coordinates>
+      </Point>
+    </Placemark>
   </Document>
 </kml>
