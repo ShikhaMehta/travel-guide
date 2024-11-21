@@ -14,26 +14,40 @@
     </Style>
 
     <!-- Define a red pin style -->
-    <Style id="redPinStyle">
+   <!-- <Style id="redPinStyle">
       <IconStyle>
-        <color>ff0000ff</color> <!-- Red color -->
+        <color>ff0000ff</color> 
         <scale>4</scale>
         <Icon>
           <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
         </Icon>
       </IconStyle>
-    </Style>
+    </Style> -->
 
-        <!-- Define a attractionPinStyle -->
-    <Style id="attractionPinStyle">
-      <IconStyle>
-        <color>FFFF00</color> <!-- Yellow color -->
-        <scale>4</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
+
+<Style id="redPinStyle">
+  <IconStyle>
+    <color>ff0000ff</color>
+    <scale>2</scale>
+    <Icon>
+      <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+    </Icon>
+  </IconStyle>
+  <LabelStyle>
+    <color>ff00ff00</color> <!-- Green color -->
+    <scale>2</scale> <!-- Adjust size -->
+  </LabelStyle>
+  <BalloonStyle>
+    <text><![CDATA[
+      <div style="font-size:22px; font-weight:bold; color:green;">
+        $[name]
+      </div>
+    ]]></text>
+  </BalloonStyle>
+</Style>
+
+
+
 
     <!-- Central Park with Custom Icon -->
     <Placemark>
@@ -58,13 +72,6 @@
       <styleUrl>#redPinStyle</styleUrl>
       <Point>
         <coordinates>-74.044502,40.689247,0</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Central Park</name>
-      <styleUrl>#attractionPinStyle</styleUrl>
-      <Point>
-        <coordinates>-73.968285,40.785091,0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
